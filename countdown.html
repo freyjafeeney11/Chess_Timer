@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="colors.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Syne+Mono&family=VT323&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+  </head>
+  <body>
+    <h1>Chess Timer!</h1>
+    <div class=buttons-container>
+    <img class="button1" src="./assets/button1.png" alt="Player 1 Timer" id="startStopButton1">
+  
+    <!-- Player 2 Button and Timer Display -->
+    <img class="button2" src="./assets/button2.png" alt="Player 2 Timer" id="startStopButton2">
+  </div>
+  <div class="timers-container">
+    <p id="timerDisplay1">Begin!</p>
+  <p id="timerDisplay2">Begin!</p>
+</div>
+    <img class="clock" src="./assets/clock.png" alt="Clock">
+    <script src="renderer.js"></script> <!-- Link to your renderer.js -->
+  </body>
+</html>

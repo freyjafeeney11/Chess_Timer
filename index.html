@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="colors.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Chess Timer</title>
+    <style>
+        .container {
+            text-align: center;
+        }
+        img {
+            cursor: pointer;
+            width: 200px;  /* Adjust image size */
+            height: auto;
+            transition: transform 0.3s ease; /* Add smooth scaling effect */
+        }
+        img:hover {
+            transform: scale(1.1); /* Slight zoom effect on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Chess Timer</h2>
+        <!-- Image acting as a button -->
+        <img id="startButton" src="./assets/king.png" alt="Start Game" />
+    </div>
+
+    <script>
+        // Add event listener to the image so it functions as a button
+        document.getElementById('startButton').addEventListener('click', () => {
+            window.location.href = 'countdown.html'; // Transition to countdown screen
+        });
+    </script>
+</body>
+</html>

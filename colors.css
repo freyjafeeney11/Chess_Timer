@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'Nova Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('VT323-Regular.ttf') format('truetype');
+}
+
+body {
+  font-family: Nova Mono, monospace;
+  background-color: #f0ceed;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Center the title and text */
+h1 {
+  margin-top:80px;
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+h2 {
+  margin-top:30px;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+/* Styling for the text (e.g., for the timer countdown) */
+p {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+/* Ensure the clock is centered and not stretched */
+.clock {
+  width: 300px;
+  text-align: center;
+  font-size: 36px;
+  margin-top: -15px;
+  margin-bottom: 20px;
+}
+
+/* Container to hold the buttons horizontally */
+.buttons-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;  /* Adjust the gap between the buttons */
+}
+.timers-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 90px;  /* Adjust the gap between the buttons */
+}
+.button1:hover, .button2:hover {
+  transform: scale(1.1); /* Optional: Make the button slightly bigger on hover */
+}
+/* Style for the buttons */
+.button1, .button2 {
+  width: 80px;
+  cursor: pointer;
+  border-radius: 50%; /* Make the button circular */
+}
+
+/* Add some space between the timer and the clock */
+#timerDisplay1, #timerDisplay2 {
+  font-size: 10px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Optional: For small screens, reduce font size of countdown */
+@media (max-width: 450px) {
+  h1 {
+    font-weight: 130;
+    font-size: 40px;
+  }
+
+  #timerDisplay1, #timerDisplay2 {
+    font-weight: 130;
+    font-size: 33px;
+  }
+}

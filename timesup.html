@@ -1,0 +1,39 @@
+<!-- times-up.html (Time's Up Screen) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="colors.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time's Up!</title>
+    <style>
+        .container {
+            text-align: center;
+        }
+        img {
+            cursor: pointer;
+            width: 200px;  /* Adjust image size */
+            height: auto;
+            transition: transform 0.3s ease; /* Add smooth scaling effect */
+        }
+        img:hover {
+            transform: scale(1.1); /* Slight zoom effect on hover */
+        }
+        p {
+            margin-bottom:20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Player One Lost!</h1>
+    <p>You ran out of time.</p>
+    <img id="startOver" src="./assets/king.png" alt="Start Game" />
+    
+    <script>
+        // Add event listener to the image so it functions as a button
+        document.getElementById('startOver').addEventListener('click', () => {
+            window.location.href = 'index.html'; // Transition to countdown screen
+        });
+    </script>
+</body>
+</html>
